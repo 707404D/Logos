@@ -1,0 +1,112 @@
+.nav {
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   background-color: #403c3c;
+   border-bottom: 1px solid rgba(#fff, 0.1);
+   &.nav-cart {
+      border-top: 1px solid rgba(#fff, 0.1);
+      background-color: transparent;
+      position: static;
+   }
+   &.nav-itemcart {
+      @media (max-width: 989px) {
+         display: none;
+      }
+   }
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 80px;
+      @media (max-width: 1300px) {
+         padding: 0;
+      }
+      .slick-list {
+         width: 100%;
+         @media (max-width: 989px) {
+            padding-right: 100px;
+         }
+         @media (max-width: 675px) {
+            padding-right: 60px;
+         }
+         @media (max-width: 375px) {
+            padding-right: 30px;
+         }
+      }
+      .slick__item {
+         height: 102px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 0 20px;
+      }
+      .slick-slide {
+         min-height: 102px;
+         flex: 1 1 auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .slick-track {
+         margin: 0;
+         width: 100%;
+         min-height: 100%;
+         display: flex;
+         align-items: center;
+         
+      }
+      .slick-prev,
+      .slick-next {
+         display: none;
+         opacity: 0;
+         user-select: none;
+      }
+   }
+
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      color: #cfcfcf;
+      text-decoration: none;
+      position: relative;
+      height: 100%;
+      padding: 30px 0px;
+
+      text-align: center;
+      transition: all 0.2s ease-out;
+
+      &:before {
+         content: "";
+         width: 0%;
+         margin: 0 auto;
+         height: 3px;
+         background-color: #618967;
+         box-shadow: 0 5px 12px rgba(#72a479, 0.3);
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+      }
+      &:hover {
+         filter: brightness(120%);
+      }
+      &.navactivelink {
+         color: #fff;
+         &:before {
+            width: 80%;
+         }
+      }
+   }
+}

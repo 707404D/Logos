@@ -1,0 +1,11 @@
+.contacts {
+   display: grid;
+   grid-template: auto 150px auto/ auto;
+}
+
+.ourcafe {
+   grid-area: 1/1/3/2;
+}
+.info {
+   grid-area: 2/1/4/2;
+}
