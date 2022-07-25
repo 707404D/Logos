@@ -721,6 +721,7 @@ li {
   -webkit-transform: rotate(-9deg);
           transform: rotate(-9deg);
   z-index: 4;
+  text-align: center;
 }
 .preview__title h1 {
   font-family: Zing Rust Demo;
@@ -741,7 +742,7 @@ li {
     grid-area: 2/2/3/3;
     text-align: center;
   }
-  .preview__title span {
+  .preview__title h1 {
     font-size: 35px;
   }
 }
@@ -753,9 +754,9 @@ li {
   margin-left: -5px;
   margin-top: 5px;
   padding-right: 5px;
+  text-align: center;
 }
 .preview__title-mask span {
-  text-align: center;
   font-family: Zing Rust Demo;
   font-size: 67px;
   font-weight: 400;
