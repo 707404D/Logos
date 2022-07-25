@@ -748,13 +748,13 @@ li {
 }
 .preview__title-mask {
   grid-area: 2/2/3/3;
+  text-align: center;
   z-index: 2;
   -webkit-transform: rotate(-9deg);
           transform: rotate(-9deg);
   margin-left: -5px;
   margin-top: 5px;
   padding-right: 5px;
-  text-align: center;
 }
 .preview__title-mask span {
   font-family: Zing Rust Demo;
