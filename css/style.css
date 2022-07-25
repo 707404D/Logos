@@ -755,6 +755,7 @@ li {
   padding-right: 5px;
 }
 .preview__title-mask span {
+  text-align: center;
   font-family: Zing Rust Demo;
   font-size: 67px;
   font-weight: 400;
