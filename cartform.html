@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+
+
+   <link rel="stylesheet" type="text/css" href="css/slick.css" />
+   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+   <!-- favicon -->
+
+
+
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+   <link rel="manifest" href="img/favicon/site.webmanifest">
+   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#00a300">
+   <meta name="theme-color" content="#ffffff">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <title>Logos</title>
+</head>
+
+
+<body id="body" class="body body-cartform">
+
+   <header id="header" class="header ">
+      <div class="container">
+         <div class="header__inner ">
+            <div class="header__menu">
+               <div class="header__burger">
+                  <div class="header__burger-item"></div>
+               </div>
+               <span>меню</span>
+            </div>
+
+            <div class="header__logo">
+               Logos
+            </div>
+
+            <div class="header__search">
+               <div class="header__search-img">
+                  <img src="img/header/Location.svg" alt="">
+               </div>
+               <input placeholder="Введите адрес доставки" type="text" class="header__input">
+               <div class="header__search-img">
+                  <img src="img/header/Search.svg" alt="">
+               </div>
+            </div>
+
+            <div class="header__contact">
+               <div class="header__contact-img">
+                  <img src="img/header/Calling.svg" alt="">
+               </div>
+               <div class="header__contact-text">
+                  <p>Контакты:</p>
+                  <p>
+                     +7 (917) 510-57-59
+                  </p>
+               </div>
+            </div>
+            <a href="cartdeliv.html" class="header__cart">
+               <span>Корзина</span>
+               <span class="header__cart-count">
+                  4
+               </span>
+            </a>
+
+
+            <div class="header__links">
+
+
+               <div class="footer__links">
+                  <a href="index.html#contacts">О ресторане</a>
+                  <a href="delivery.html">Условия доставки</a>
+                  <a href="">Возврат товара </a>
+                  <a href="discount.html">Акции</a>
+               </div>
+               <div class="footer__info-links">
+                  <a href="">Пользовательское соглашение</a>
+                  <a href="">Карта сайта</a>
+                  <a href="">Политика конфиденциальности</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <section class="nav nav-cart nav-cartform">
+      <div class="container">
+         <div id="menuNav" class="nav__inner">
+            <div class="slick__item">
+               <a href="index.html#menusection_1" class="nav__link navactivelink">Холодные закуски</a>
+            </div>
+            <div class="slick__item">
+               <a href="index.html#menusection_2" class="nav__link">Горячие закуски</a>
+            </div>
+            <div class="slick__item">
+               <a href="index.html#menusection_3" class="nav__link">Супы</a>
+            </div>
+            <div class="slick__item">
+               <a href="index.html#menusection_4" class="nav__link">Мясные блюда</a>
+            </div>
+            <div class="slick__item">
+               <a href="index.html#menusection_3" class="nav__link">Рыбные блюда</a>
+            </div>
+            <div class="slick__item">
+               <a href="index.html#menusection_4" class="nav__link">Гриль меню</a>
+            </div>
+            <div class="slick__item">
+               <a href="index.html#menusection_2" class="nav__link">Фирменные блюда</a>
+            </div>
+
+            <div class="slick__item">
+               <a href="index.html#menusection_1" class="nav__link">Напитки</a>
+
+            </div>
+
+
+
+
+
+         </div>
+      </div>
+   </section>
+
+   <section class="cartform">
+      <div class="container">
+         <div class="cartform__inner ">
+            <a href="cartdeliv.html" class="cartdeliv__link">
+               <div class="cartdeliv__link-img">
+                  <img src="img/cartdeliv/Arrow.svg" alt="">
+               </div>
+               <span>в корзину</span>
+            </a>
+            <div class="cartdeliv__title">
+               <h2>Оформление заказа</h2>
+
+            </div>
+            <div class="cartform__contactinfo cartform__item">
+               <h3 class="cartform__title">
+                  1. Контактная информация
+               </h3>
+               <input placeholder="Имя" type="text" class="cartform__input">
+
+               <input placeholder="Телефон" type="number" class="cartform__input">
+
+            </div>
+
+
+            <div class="cartform__deliv cartform__item">
+               <h3 class="cartform__title">
+                  2. Доставка
+               </h3>
+
+               <div class="cartform__deliv-btns">
+                  <button id="btnDeliv" class="cartform__deliv-btn activedelivbtn ">
+                     Доставка
+                  </button>
+                  <button id="btnOut" class="cartform__deliv-btn ">
+                     Самовывоз
+                  </button>
+               </div>
+               <span class="cartform__deliv-text">
+                  <img src="img/cartform/clock.svg" alt="">
+                  Доставим через 1 час 30 минут
+               </span>
+
+               <h4 class="cartform__deliv-subtitle">
+                  Адрес доставки
+               </h4>
+               <div class="cartform__deliv-inner">
+                  <input placeholder="Укажите улицу*" type="text" class="cartform__input">
+                  <input placeholder="Номер дома*" type="number" class="cartform__input">
+                  <input placeholder="№ квартиры/офиса" type="number" class="cartform__input">
+                  <input placeholder="Подъезд" type="number" class="cartform__input">
+                  <input placeholder="Этаж" type="number" class="cartform__input">
+                  <input placeholder="Комментарий" type="text" class="cartform__input">
+               </div>
+
+               <div class="cartform__deliv-choice">
+                  <h4 class="cartform__deliv-subtitle cartform__out-subtitle">Выберите ресторан</h4>
+
+                  <div class="cartform__out-select">
+                     <select class="restselect" name="" id="">
+                        <option disabled value="">Выберите ресторан</option>
+                        <option value="">Ресторан 1</option>
+                        <option value="">Ресторан 2</option>
+                        <option value="">Ресторан 3</option>
+                        <option value="">Ресторан 4</option>
+                        <option value="">Ресторан 5</option>
+                        <option value="">Ресторан 6</option>
+                        <option value="">Ресторан 7</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+
+            <div class="cartform__pay cartform__item">
+               <h3 class="cartform__title">
+                  3. Оплатить
+               </h3>
+               <div class="cartform__pay-btns">
+                  <button class="cartform__pay-btn activepaybtn ">
+                     Оплата онлайн
+                  </button>
+                  <button class="cartform__pay-btn ">
+                     Курьеру картой
+                  </button>
+                  <button class="cartform__pay-btn ">
+                     Наличными
+                  </button>
+               </div>
+               <input placeholder="Сдача с" type="number" class="cartform__input">
+            </div>
+
+            <div class="cartform__when cartform__item">
+               <h3 class="cartform__title">
+                  4. Когда доставить
+               </h3>
+               <div class="cartform__when-btns">
+                  <button class="cartform__when-btn activewhenbtn">
+                     В ближайшее время
+                  </button>
+                  <button class="cartform__when-btn">
+                     Ко времени
+                  </button>
+
+
+               </div>
+               <input placeholder="Укажите время" type="number" class="cartform__input cartwhen-input">
+
+
+
+               <div class="cartform__when-col">
+                  <span>Кол-во персон</span>
+
+                  <div class="cartform__when-col-btns">
+                     <button class="cartform__when-col-btn-minus">
+                     </button>
+                     <input value="1" type="number" class="cartform__input">
+
+                     <button class="cartform__when-col-btn-plus">
+                     </button>
+                  </div>
+
+               </div>
+               <div class="cartform__when-recall">
+                  <h4 class="cartform__when-recall-title">
+                     Хотите мы позвоним?
+                  </h4>
+                  <button class="cartform__when-recall-btn">
+                     <input name="radio1" id="radio1" type="radio" class="cartform__when-input">
+                     <label for="radio1">Не перезванивать</label>
+                  </button>
+                  <button class="cartform__when-recall-btn">
+                     <input name="radio1" id="radio2" type="radio" class="cartform__when-input">
+                     <label for="radio2">Потребуется звонок оператора</label>
+                  </button>
+
+
+               </div>
+            </div>
+
+
+
+            <div class="cartform__final cartform__item">
+               <div class="cartform__final-text">
+                  <input type="checkbox" id="checkboxfinal" class="cartform__final-input">
+                  <label for="checkboxfinal">
+                     Я согласен на обработку моих перс. данных в соответствии c <a href="">Условиями</a>
+                  </label>
+               </div>
+
+
+
+               <a href="" class="cartdeliv__sum-btn">
+                  Оформить заказ
+               </a>
+
+            </div>
+
+
+         </div>
+      </div>
+   </section>
+
+
+
+
+
+
+
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+            <a href="#header" class="footer__btn">
+               <img src="img/footer/Arrow.svg" alt="">
+            </a>
+
+            <div class="footer__info">
+               <div class="footer__logo">
+                  Logos
+               </div>
+               <div class="footer__info-text">
+                  © ООО СК «АПШЕРОН»
+                  Все права защищены. 2010-2020
+               </div>
+
+               <div class="footer__info-links">
+                  <a href="">Пользовательское соглашение</a>
+                  <a href="">Карта сайта</a>
+                  <a href="">Политика конфиденциальности</a>
+               </div>
+            </div>
+
+            <div class="footer__links">
+               <a href="index.html#contacts">О ресторане</a>
+               <a href="delivery.html">Условия доставки</a>
+               <a href="">Возврат товара </a>
+               <a href="discount.html">Акции</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+
+</body>
+
+
+<script src="slick.js"></script>
+<script src="app.js"></script>
+
+</html>

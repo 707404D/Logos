@@ -1,0 +1,133 @@
+@font-face {
+   font-family: Gilroy;
+   src: url("/fonts/Gilroy-Light.woff2") format("woff2"), url("/fonts/Gilroy-Light.ttf") format("truetype"),
+      url("/fonts/Gilroy-Light.woff") format("woff");
+   font-weight: 300;
+   font-style: normal;
+}
+@font-face {
+   font-family: Gilroy;
+   src: url("/fonts/Gilroy-Regular.woff2") format("woff2"), url("/fonts/Gilroy-Regular.ttf") format("truetype"),
+      url("/fonts/Gilroy-Regular.woff") format("woff");
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: Gilroy;
+   src: url("/fonts/Gilroy-Medium.woff2") format("woff2"), url("/fonts/Gilroy-Medium.ttf") format("truetype"),
+      url("/fonts/Gilroy-Medium.woff") format("woff");
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: Gilroy;
+   src: url("/fonts/Gilroy-Semibold.woff2") format("woff2"), url("/fonts/Gilroy-Semibold.ttf") format("truetype"),
+      url("/fonts/Gilroy-Semibold.woff") format("woff");
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: Gilroy;
+   src: url("/fonts/Gilroy-Bold.woff2") format("woff2"), url("/fonts/Gilroy-Bold.ttf") format("truetype"),
+      url("/fonts/Gilroy-Bold.woff") format("woff");
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: Zing Rust Demo;
+   src: url("/fonts/ZingRustDemoBase.woff2") format("woff2"), url("/fonts/ZingRustDemoBase.ttf") format("truetype"),
+      url("/fonts/ZingRustDemoBase.woff") format("woff");
+   font-weight: 400;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: "Proxima Nova";
+   src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"),
+      url("../fonts/ProximaNova-Bold.woff") format("woff");
+   font-weight: 700;
+   font-style: normal;
+}
+
+body {
+   margin: 0;
+   overflow-x: hidden;
+   // font-family: Zing Rust Demo;
+
+   font-family: Gilroy;
+
+   box-sizing: border-box;
+   // background-color: #f9fbff;
+
+   // background: rgb(33, 31, 32);
+   background: linear-gradient(0deg, rgba(33, 31, 32, 1) 0%, rgba(68, 64, 63, 1) 100%);
+
+   &.body-cart {
+      background: linear-gradient(0deg, rgba(33, 31, 32, 1) 0%, rgba(68, 64, 63, 1) 100%);
+   }
+   &.body-disc {
+      background: linear-gradient(0deg, rgba(33, 31, 32, 1) 0%, rgba(68, 64, 63, 1) 100%);
+   }
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+h1 {
+}
+
+p {
+   margin: 0;
+}
+
+.container {
+   max-width: 1470px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+button {
+   background: none;
+   padding: 0;
+   border: 0;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+@import "blocks/vars";
+@import "blocks/header";
+@import "blocks/preview";
+@import "blocks/nav";
+@import "blocks/menu";
+@import "blocks/contacts";
+@import "blocks/ourcafe";
+@import "blocks/info";
+@import "blocks/footer";
+@import "blocks/itemcart";
+@import "blocks/cartdeliv";
+@import "blocks/cartform";
+@import "blocks/delivery";
+@import "blocks/discount";
